@@ -1,0 +1,15 @@
+    ARRAYLIST
+
+
+    - Gli array di tipo primoitivo hanno un problema di staticità ovvero la dimensione in caso di inserimento
+      o cancellazioe varia (soprattuto per la cancellazione), per poter poi riadattare il contenuto dell'array
+      al programma è un lavoraccio. Questo si traduce anche in problemi di performance del codice.
+      Gli arraylist ovviano a questo problema essendo strutture di dati che contengono sempre elementi omogenei
+      (dati dello stesso tipo) ma con molta più dinamicità: se viene cancellato un elemento è poi lo stesso compilatore a
+      riempire lo spazio vuoto che rimane nell'array.
+      Gli arraylist estendono la classe abstractlist, la quale implementa l'interfaccia List.
+
+      esempio sintassi:
+      - List<T> nome = new ArrayList<>();
+      - List>String> nomiMacchine = new ArrayList<>();
+
