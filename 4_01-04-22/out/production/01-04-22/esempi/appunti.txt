@@ -1,0 +1,14 @@
+L'ASTRAZIONE E' UNO DEI PARADIGMI DELLA OOP.
+L'astrazione comprende due concetti fondamentali:
+    1 - Classi astratte
+    2 - Interfacce
+
+Lo scopo dell'astrazione è quello di nascondere i dettagli implementativi all'utente, lasciandogli solo capire
+che cosa andrà a fare il mio programma e NON COME.
+
+-   CLASSI ASTRATTE
+Una classe astratta fondamentalmente è anch'essa una classe (come quelle viste fino ad ora), con la sola differenza
+che non sarà possibile istanziarle e sarà anche possibile, creare dei metodi astratti al loro interno.
+I metodi astratti sono dei metodi che includono la keyword "abstract" all'interno della firma del metodo e,
+non contengono il corpo della funzione. (ESEMPIO: NON DICO COME CALCOLO AREA/PERIMETRO, MA DICO COSA CALCOLO -->
+OVVERO AREA E PERIMETRO)

@@ -1,0 +1,35 @@
+-   HASHMAP
+Le Hashmap sono una struttura dati, che va a mappare il valore di una chiave(K), associando un determinato valore (V).
+(es: fate finta di avere un mazzo di chiavi con i relativi colori di segnatura. Dove i colori di segnatura sono univoci)
+- Si basano ed implementa l'interfaccia Map<K, V> ereditando la classe astratta AbstractMap<K, V>.
+- Il tipo della chiave e del valore vengono scelti dal programmatore e, non necessariamente devono essere uguali.
+
+-1° MODO:
+    -   Map<K, V> nomeMappa = new HashMap<>();
+-2° MODO:
+    - HashMap<K, V> nomeMappa = new HashMap<>();
+
+-   ITERAZIONE SULLE HASHMAP --> foreach = for (T v : strutturaIterativa) {}
+
+- Le mappe hanno due valori possibili all'interno della quale posso iterare : Chiavi e/o i valori
+    -   Chiavi
+        Per iterare sulle chiavi, utilizzo il metodo keySet() appartenente alle mappe. Questo metodo mi permetterà
+        di stampare ed allo stesso tempo ottenere i valori delle chiavi della mia mappa, con conseguente (possibile)
+        ottenimento dei valori associati alle chiavi.
+        -   esempio:
+            for(String key : mappa.keySet())
+            {
+                System.out.println(key + " " + mappa.get(key));
+            }
+        - esempio: lambda-notation
+            mappa.forEach((key, value) -> {System.out.println(key + " " + value);});
+            mappa.keySet().forEach(key ->{System.out.println(key + " " + mappa.get(key));}); // ciclo direttamente sulle chiavi
+
+    -   Valori
+        Per iterare sui valori, utilizzo il metodo values() per ottenere SOLAMENTE i valori consecutivi della mia mappa.
+        -   for(T v : mappa.values())
+            {
+                System.out.println("Valore: " + v);
+            }
+         - esempio: lambda-notation
+            - mappa.values().forEach(v ->{System.out.println(v);}); // ciclo direttamente sui valori

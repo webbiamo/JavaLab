@@ -1,0 +1,12 @@
+-   arraylist
+
+- Gli array di tipo primitivo hanno un problema di STATICITA':
+    - La dimensione in caso di inserimenti/cancellazione varia (soprattutto per la cancellazione), per poter poi,
+    riadattare il contenuto dell'array al programma è un lavoraccio.
+
+- Gli arraylist ovviano, ovvero, risolvono questo problema, essendo una struttura dati che contiene sempre elementi omogenei
+ quindi ,dati dello stesso tipo, ma con molta più dinamicità.
+ Gli arraylist, estendono la classe AbstractList, la quale implementa l'interfaccia List.
+
+ - List<T> nome = new ArrayList<>();
+ - List<String> nomiMacchine = new ArrayList<>();
